@@ -6,7 +6,10 @@ extern "C" {
 
 #define CLOCK_SYS_CLOCK_HZ  	24000000
 
-#define ADVERTISING_INTERVAL 3000
+//#define ADVERTISING_INTERVAL 3000	// Around 1800ms
+//#define ADVERTISING_INTERVAL 12000	// Around 7500ms
+#define ADVERTISING_INTERVAL 16000	// Around 10000ms
+// (ADV_INTERVAL / 1.6) = real advertisement period in msec
 
 #define RAM _attribute_data_retention_ // short version, this is needed to keep the values in ram after sleep
 
